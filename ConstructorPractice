@@ -1,0 +1,40 @@
+import java.util.*;
+
+class myInfo{
+    int age ;
+    String name ;
+
+    public myInfo(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public myInfo() {
+        
+    }
+
+    public void printName(){
+        System.out.println("The name is :"+ name);
+    }
+    public void printAge(int age){
+        System.out.println("The age is:"+ age);
+    }
+}
+
+public class FirstClass {
+    public  static void main(String[] args){
+        myInfo n1 = new myInfo();
+        n1.age = 20;
+        Scanner sc = new Scanner(System.in);
+        n1.name = sc.next();
+        n1.printAge(n1.age);
+        n1.printName();
+
+        myInfo n2 = new myInfo("Bjorn", 20);
+//        n2.printName();
+//        n2.printAge();
+        n2.printName();
+        n2.printAge(n2.age);
+
+    }
+}
